@@ -1,0 +1,38 @@
+#background{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    background-color: blue;
+}
+
+body{
+    margin: 0;
+}
+
+.foregroundrect, #keyrect{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: absolute;
+    font-size: 15px;
+}
+
+#rect0{
+    border-top-left-radius: 100px;
+}
+
+#rect1, #keyrect{
+    left: 100px;
+    border-top-right-radius: 100px;
+    transform-origin: bottom left ; 
+    z-index: 5;    
+}
+#rect2{
+    top: 100px;
+    left: 100px;
+    border-bottom-right-radius: 100px;
+}
+#rect3{
+    top: 100px;
+    border-bottom-left-radius: 100px;
+}
