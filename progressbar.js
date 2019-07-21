@@ -2,16 +2,20 @@
 window.addEventListener('load', function(){
     newFunction();
     rects[1].style.tr
-    setInterval(rotate, 100);
+    setInterval(rotate, 20);
 })
 
 var rects;
 var keyrect;
+var percenttext;
 var rotated = 0;
+
 
 function newFunction() {
     rects = document.getElementsByClassName("foregroundrect");
     keyrect = document.getElementById("keyrect");
+    percenttext = document.getElementById("percent");
+    console.log(percenttext)
 }
 
 function rotate(){
@@ -41,6 +45,8 @@ function rotate(){
         rects[1].style.visibility = "visible";
         rects[1].style.backgroundColor = "#0000ff"
     }    
-    rotated = rotated + 10;
+    rotated++;
+    
+    percenttext.innerText = (Math.round(rotated/3.6)) + "%";
     keyrect.style.transform = `rotate(${rotated}deg)`;
 }

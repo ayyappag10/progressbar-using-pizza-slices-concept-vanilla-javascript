@@ -1,7 +1,7 @@
 #background{
-    width: 200px;
-    height: 200px;
-    border-radius: 100px;
+    width: 400px;
+    height: 400px;
+    border-radius: 200px;
     background-color: blue;
 }
 
@@ -10,29 +10,44 @@ body{
 }
 
 .foregroundrect, #keyrect{
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     background-color: red;
     position: absolute;
     font-size: 15px;
 }
 
 #rect0{
-    border-top-left-radius: 100px;
+    border-top-left-radius: 200px;
 }
 
 #rect1, #keyrect{
-    left: 100px;
-    border-top-right-radius: 100px;
+    left: 200px;
+    border-top-right-radius: 200px;
     transform-origin: bottom left ; 
     z-index: 5;    
 }
 #rect2{
-    top: 100px;
-    left: 100px;
-    border-bottom-right-radius: 100px;
+    top: 200px;
+    left: 200px;
+    border-bottom-right-radius: 200px;
 }
 #rect3{
-    top: 100px;
-    border-bottom-left-radius: 100px;
+    top: 200px;
+    border-bottom-left-radius: 200px;
+}
+#innerrect{
+    z-index: 15;
+    position: absolute;
+    height: 340px;
+    width: 340px;
+    font-size: 60px;
+    border-radius: 170px;
+    background-color: white;
+    transform: translate(30px, 30px);
+    /* text-align: center; */
+}
+#percent{
+    display: inline-block;
+    padding: 140px
 }
